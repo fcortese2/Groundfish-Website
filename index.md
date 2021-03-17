@@ -3,8 +3,6 @@
 
 DBTools is a unity plugin which enables runtime virtual database creation in Unity. Writing, reading and interacting with the virtual database.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
 ### How to use
 
 Once you have imported the package into your Unity project, firstly you can add all of the objects (only Serializable Objects) to the *INCLUDED OBJECTS* section of the inspector int the *DBTools -- Settings* object found in the hierarchy view.
