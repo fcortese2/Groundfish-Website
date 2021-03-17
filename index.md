@@ -14,10 +14,12 @@ Once you have imported the package into your Unity project, firstly you can add 
 
 After adding the items, you must specify which fields will be included in the virtual database. You can do so by clicking the *+* button under the *DATABASE FIELDS* section of the same inspector. If the field name has been entered correctly, a tick will appear next to the entry. If it has not been entered correctly, an error message and a cross will appear, as well as play mode exiting as soon as you try to enter play mode in-engine. Please remember to specify the datatype of the field correctly.
 
-The only available datatypes are currently `string, int, float` and `bool`.
+The only available datatypes are currently `string`, `int`, `float` and `bool`.
 
 
 ![Specifying fields](https://fcortese2.github.io/Groundfish-Website/FieldsSelection.PNG)
+
+Should you need to add further fields to the database which cannot be converted to a basic type such as `int`, `float`, `bool` and `string`, navigate to the scene object called *DBTools -- Reflector*. In this object's inspector window, proceed to select one of the following types from the drop-down menu : `Texture2D`, `Sprite` or `GameObject`. Currently these are the only unity-specific types which can be stored in the virtual database, but more will be added at a later stage.
 
 
 ```markdown
