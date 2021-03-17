@@ -3,7 +3,7 @@
 
 DBTools is a unity plugin which enables runtime virtual database creation in Unity. Writing, reading and interacting with the virtual database.
 
-### How to use
+### Visual Setup
 
 Once you have imported the package into your Unity project, firstly you can add all of the objects (only Serializable Objects) to the *INCLUDED OBJECTS* section of the inspector int the *DBTools -- Settings* object found in the hierarchy view.
 
@@ -28,6 +28,17 @@ _Pre-connection reflector settings_
 ![Post-connection Reflector](https://fcortese2.github.io/Groundfish-Website/ReflectorPostConnection.PNG)
 
 _Post-connection reflector settigns_
+
+
+
+### Custom script interaction with DBTools
+
+Because of the nature of the plugin, it is necessary for the user to be able to access data from the virtual database through custom scripts.
+
+**IMPORTANT NOTE:** *When accessing external DBTools functionalities, please **ONLY** reference the script `DBTools_Link` attached to the automatically generated scene object called "DBTools - Runtime". The methods designed to be interacted with externally are all publicly accessible through the instance of the `DBTools_Link` script.*
+
+
+
 
 ```markdown
 Syntax highlighted code block
