@@ -7,7 +7,11 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ### How to use
 
-Once you have imported the package into your Unity project, firstly you can add all of the objects (only Serializable Objects) to the **
+Once you have imported the package into your Unity project, firstly you can add all of the objects (only Serializable Objects) to the *INCLUDED OBJECTS* section of the inspector int the *DBTools -- Settings* object found in the hierarchy view.
+
+[Adding objects before runtime](https://github.com/fcortese2/Groundfish-Website/blob/cd560fdae98d4821381d7a5c4274b77bce60179d/AddObjectsUI.PNG)
+
+
 
 ```markdown
 Syntax highlighted code block
