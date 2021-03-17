@@ -12,6 +12,13 @@ Once you have imported the package into your Unity project, firstly you can add 
 ![Adding objects before runtime](https://fcortese2.github.io/Groundfish-Website/AddObjectsUI.PNG)
 
 
+After adding the items, you must specify which fields will be included in the virtual database. You can do so by clicking the *+* button under the *DATABASE FIELDS* section of the same inspector. If the field name has been entered correctly, a tick will appear next to the entry. If it has not been entered correctly, an error message and a cross will appear, as well as play mode exiting as soon as you try to enter play mode in-engine. Please remember to specify the datatype of the field correctly.
+
+The only available datatypes are currently `string, int, float` and `bool`.
+
+
+![Specifying fields](https://fcortese2.github.io/Groundfish-Website/FieldsSelection.PNG)
+
 
 ```markdown
 Syntax highlighted code block
