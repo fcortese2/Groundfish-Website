@@ -22,9 +22,11 @@ Should you need to add further fields to the database which cannot be converted 
 _For ease of use, you may also select through which field you would like to see each of the entries labeled as by selecting a different option from the drop-down menu labeled **Reference to display**. _
 
 ![Pre-connection Reflector](https://fcortese2.github.io/Groundfish-Website/ReflectorConnection.PNG)
+
 _Pre-connection reflector settings_
 
 ![Post-connection Reflector](https://fcortese2.github.io/Groundfish-Website/ReflectorPostConnection.PNG)
+
 _Post-connection reflector settigns_
 
 ```markdown
