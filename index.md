@@ -17,8 +17,15 @@ The only available datatypes are currently `string`, `int`, `float` and `bool`.
 
 ![Specifying fields](https://fcortese2.github.io/Groundfish-Website/FieldsSelection.PNG)
 
-Should you need to add further fields to the database which cannot be converted to a basic type such as `int`, `float`, `bool` and `string`, navigate to the scene object called *DBTools -- Reflector*. In this object's inspector window, proceed to select one of the following types from the drop-down menu : `Texture2D`, `Sprite` or `GameObject`. Currently these are the only unity-specific types which can be stored in the virtual database, but more will be added at a later stage.
+Should you need to add further fields to the database which cannot be converted to a basic type such as `int`, `float`, `bool` and `string`, navigate to the scene object called *DBTools -- Reflector*. In this object's inspector window, proceed to select one of the following types from the drop-down menu : `Texture2D`, `Sprite` or `GameObject`. Currently these are the only unity-specific types which can be stored in the virtual database, but more will be added at a later stage. You may then drag into the appropriate slots each object's value.
 
+_For ease of use, you may also select through which field you would like to see each of the entries labeled as by selecting a different option from the drop-down menu labeled **Reference to display**. _
+
+![Pre-connection Reflector](https://fcortese2.github.io/Groundfish-Website/ReflectorConnection.PNG)
+_Pre-connection reflector settings_
+
+![Post-connection Reflector](https://fcortese2.github.io/Groundfish-Website/ReflectorPostConnection.PNG)
+_Post-connection reflector settigns_
 
 ```markdown
 Syntax highlighted code block
