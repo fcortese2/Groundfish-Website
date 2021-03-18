@@ -39,6 +39,28 @@ Because of the nature of the plugin, it is necessary for the user to be able to 
 
 *For the sake of continuity, we will refer to a reference of the `DBTools_Link` script as `_link`*
 
+**IMPORTANT NOTE:** *We highly suggest you have a unique variable indicator within your scriptable object and referenced within the database fields as previously mentioned. A possible basic implementation of this is as follows:*
+```c#
+[HideInInspector]public string uniqueID;
+
+private void Awake()
+    {
+        uniqueID = GenerateRandomString();
+    }
+
+    private string GenerateRandomString()
+    {
+        const string possibleChar = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+        char[] charArray = new char[12];
+        for (int i = 0; i < charArray.Length; i++)
+        {
+            charArray[i] = possibleChar[Random.Range(0, possibleChar.Length)];
+        }
+        return new string(charArray);
+    }
+```
+
+
 #### Initiating the databse and database creation
 
 DBTools has internal functionality which allows the user to set the plugin to automatically generate the database on load. Should the user prefer to call the creation of the database through custom code, it is possible as follows:
@@ -46,6 +68,12 @@ DBTools has internal functionality which allows the user to set the plugin to au
 ```c#
 _link.GenerateDB();
 ```
+
+
+
+
+
+
 
 
 ```markdown
