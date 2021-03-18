@@ -59,7 +59,7 @@ private void Awake()
         return new string(charArray);
     }
 ```
-
+**You will then need to specify which field represents a unique value for each object in the *Field representing unique entry ID:* section of the *DBTools - Runtime* object inspector. WHenever you come across the default string value `root` within fields, it is a direct reference to this unique ID of the object.**
 
 #### Initiating the databse and database creation
 
@@ -69,7 +69,13 @@ DBTools has internal functionality which allows the user to set the plugin to au
 _link.GenerateDB();
 ```
 
+### Getting entry key ID (equivalent to entry row number in the database)
+This returns int by default. Finds the first field with a specific value within a specific field.
+Possible inputs are int, string, float and bool. Please ensure the field value is of the same datatype as the values in the field being scanned.
 
+```c#
+_link.GetKeyFromVal(value, fieldName); 
+```
 
 
 
