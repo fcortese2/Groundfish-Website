@@ -69,7 +69,7 @@ DBTools has internal functionality which allows the user to set the plugin to au
 _link.GenerateDB();
 ```
 
-### Getting entry key ID (equivalent to entry row number in the database)
+#### Getting entry key ID (equivalent to entry row number in the database)
 This returns int by default. Finds the first field with a specific value within a specific field.
 Possible inputs are int, string, float and bool. Please ensure the field value is of the same datatype as the values in the field being scanned.
 
@@ -77,8 +77,16 @@ Possible inputs are int, string, float and bool. Please ensure the field value i
 _link.GetKeyFromVal(value, fieldName); 
 ```
 
+#### Getting field/column value from specific Key
 
+```c#
+string value = _link.GetStringFromPosition(wantedValueName, wantedKey);
+int value = _link.GetIntFromPosition(wantedValueName, wantedKey);
+float value =  _link.GetFloatFromPosition(wantedValueName, wantedKey);
+bool value = _link.GetBoolFromPosition(wantedValueName, wantedKey);
+```
 
+#### Getting
 
 
 
