@@ -37,7 +37,15 @@ Because of the nature of the plugin, it is necessary for the user to be able to 
 
 **IMPORTANT NOTE:** *When accessing external DBTools functionalities, please **ONLY** reference the script `DBTools_Link` attached to the automatically generated scene object called "DBTools - Runtime". The methods designed to be interacted with externally are all publicly accessible through the instance of the `DBTools_Link` script.*
 
+*For the sake of continuity, we will refer to a reference of the `DBTools_Link` script as `_link`*
 
+#### Initiating the databse and database creation
+
+DBTools has internal functionality which allows the user to set the plugin to automatically generate the database on load. Should the user prefer to call the creation of the database through custom code, it is possible as follows:
+
+```c#
+_link.GenerateDB();
+```
 
 
 ```markdown
