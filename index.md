@@ -86,8 +86,21 @@ float value =  _link.GetFloatFromPosition(wantedValueName, wantedKey);
 bool value = _link.GetBoolFromPosition(wantedValueName, wantedKey);
 ```
 
-#### Getting
+#### Getting field value from another field's value
+We suggest not using this functionality in majority of cases, unless the known value is a entry-unique value such as a `root` value.*
+ 
+*Please keep in mind that *
 
+```c#
+string returnValue = _link.GetStringFromValue(knownFieldName, knownValue, wantedValueFieldName);
+```
+*overloads:*
+```c#
+GetStringFromValue(string currentField, object fieldValue, string wantedField);
+GetIntFromValue(string currentField, object fieldValue, string wantedField);
+GetFloatFromValue(string currentField, object fieldValue, string wantedField);
+GetBoolFromValue(string currentField, object fieldValue, string wantedField);
+```
 
 
 ```markdown
