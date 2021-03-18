@@ -89,7 +89,7 @@ bool value = _link.GetBoolFromPosition(wantedValueName, wantedKey);
 #### Getting field value from another field's value
 We suggest not using this functionality in majority of cases, unless the known value is a entry-unique value such as a `root` value.*
  
-*Please keep in mind that *
+*Please keep in mind that it will only scan for the first object with the specified value. For cases in which you are unsure wether the entry even exists in the specified field, you will need to implement your own try-catch logic.*
 
 ```c#
 string returnValue = _link.GetStringFromValue(knownFieldName, knownValue, wantedValueFieldName);
