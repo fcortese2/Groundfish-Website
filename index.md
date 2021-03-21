@@ -102,6 +102,22 @@ GetFloatFromValue(string currentField, object fieldValue, string wantedField);
 GetBoolFromValue(string currentField, object fieldValue, string wantedField);
 ```
 
+#### Getting Unity custom objects from field Value or Key
+If you want to access the Texture2D/Sprite/GameObject at a specific unique field value, only pass the method's first parameter. Leave the `columnName` parameter as the default `root`.
+
+```c#
+Texture2D returnValue = _link.GetTexture2DReflection(uniqueValueAsCorrectType);
+Sprite returnValue = _link.GetSpriteReflection(uniqueValueAsCorrectType);
+GameObject returnValue = _link.GetGameObjectReflection(uniqueValueAsCorrectType);
+```
+
+If the known value is not in the unique-value field, pass the field name as second parameter.
+
+```c#
+Texture2D returnValue = _link.GetTexture2DReflection(uniqueValueAsCorrectType, valueFieldName);
+Sprite returnValue = _link.GetSpriteReflection(uniqueValueAsCorrectType, valueFieldName);
+GameObject returnValue = _link.GetGameObjectReflection(uniqueValueAsCorrectType, valueFieldName);
+```
 
 ```markdown
 Syntax highlighted code block
