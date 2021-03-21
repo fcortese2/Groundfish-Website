@@ -119,30 +119,18 @@ Sprite returnValue = _link.GetSpriteReflection(uniqueValueAsCorrectType, valueFi
 GameObject returnValue = _link.GetGameObjectReflection(uniqueValueAsCorrectType, valueFieldName);
 ```
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+### Nested Requests
+To maximize functionality, we suggest the use of nested requests.
+For example, you can nest requests such as
+```c#
+_link.GetTexture2DReflection(_link.GetKeyFromVal("testValue", "testColumn"));
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/fcortese2/Groundfish-Website/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Upcoming Features
+The following releases will include:
+- Adding Scriptable Objects to DB at runtime through custom scripts (HIGH IMPORTANCE)
+- Removing Scriptable Objects from DB at runtime through custom scripts (HIGH IMPORTANCE)
+- Custom generic object support in `DBTools -- Reflector` tools (MEDIUM IMPORTANCE)
+- Adding DB access requests visual representation in table/custom window (MEDIUM IMPORTANCE)
+- Adding DB request return time log option for optimization purposes(MEDIUM/LOW IMPORTANCE)  
